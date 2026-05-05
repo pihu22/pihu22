@@ -145,7 +145,7 @@ AI Security   ████████████████░░░░  VAPT
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/priyanka-mishra-635793135/)
 - 📧 mishrapriyanka2222@gmail.com | mish.pihu22@gmail.com
-- 📱 +91-8433601759
+
 
 ---
 
