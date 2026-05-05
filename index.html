@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arena Duel - Simple 3D FPS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="overlay">
+      <h1>Arena Duel</h1>
+      <p>Click Start to lock mouse and begin.</p>
+      <p>
+        Move: <strong>WASD</strong> (arrow keys also work) | Shoot:
+        <strong>Space</strong>
+      </p>
+      <p>Ability: <strong>Shift</strong> to dash</p>
+      <p>Mouse: <strong>Look only</strong> (no auto movement)</p>
+      <p>Weapons: <strong>1 / 2</strong> | Reload: <strong>R</strong></p>
+      <button
+        id="startBtn"
+        onclick="if(window.__startGame){window.__startGame(event);} return false;"
+      >
+        Start Game
+      </button>
+    </div>
+
+    <div id="hud">
+      <div>Player HP: <span id="playerHp">100</span></div>
+      <div>Bot HP: <span id="botHp">100</span></div>
+      <div>Score: <span id="score">0 - 0</span></div>
+      <div>Weapon: <span id="weaponInfo">Rifle</span></div>
+      <div>Ammo: <span id="ammoInfo">24 / 96</span></div>
+      <div>Reload: <span id="reloadState">Ready</span></div>
+      <div>Dash: <span id="dashState">Ready</span></div>
+      <div id="status">Fight!</div>
+    </div>
+
+    <div id="hitFlash"></div>
+    <div id="crosshair">+</div>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
